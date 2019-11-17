@@ -49,11 +49,11 @@ class HomeWork
     end
 
     def random_element(arr)
-      puts arr.split('').sample
+      puts arr.split(',').sample
     end
 
     def sorted_array(arr)
-      puts arr.split('').sort.reverse
+      puts arr.split(',').sort.reverse
     end
   end
 
@@ -61,8 +61,8 @@ class HomeWork
 
     class << self
       def numbers(num1, num2, method)
-        a = num1.to_i
-        b = num2.to_i
+        a = num1.to_f
+        b = num2.to_f
         case method
         when 'sum'
           puts a + b
